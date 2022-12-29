@@ -1,0 +1,17 @@
+
+query($sku: ID!){
+  product(identifier: {field: sku, value: $sku}) {
+    productId
+    productName
+  }
+}
+
+
+# query{
+#   product(identifier:{
+#     field:sku
+#     value:6
+#   }){
+#     productName
+#   }
+# }
